@@ -17,9 +17,9 @@ import {
 
 export const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Amphora Technoligies",
+    year: "Since June 2025",
+    title: "IT & Cibersecurity Specialist",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
@@ -29,9 +29,9 @@ export const portfolioProjects = [
     image: Showcase3,
   },
   {
-    company: "Innovative Co",
-    year: "2023",
-    title: "Light Saas Landing Page",
+    company: "MiiN Cosmetics",
+    year: "February 2024 to June 2025",
+    title: "IT Manager",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
@@ -41,9 +41,21 @@ export const portfolioProjects = [
     image: Showcase2,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2024",
-    title: "AI Startup Landing Page",
+    company: "TCatNet",
+    year: "December 2021 to February 2024",
+    title: "IT Technician",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "#",
+    image: Showcase1,
+  },
+  {
+    company: "Amplifon",
+    year: "January 2020 to October 2021",
+    title: "Help Desk Technician",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
@@ -55,67 +67,78 @@ export const portfolioProjects = [
 ];
 
 export const tapeWords = [
-  "Performant",
-  "Accessible",
+  "Strategic",
+  "Analytical",
+  "Proactive",
   "Secure",
-  "Interactive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Maintainable",
-  "Search Optimized",
-  "usable",
+  "Efficient",
+  "Responsible",
+  "Focused",
+  "Technical",
+  "Resourceful",
+  "Creative",
   "Reliable",
 ];
 
 export const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "IT & Cybersecurity Projects",
+    position: "General Experience",
+    text: "Implemented IT and cybersecurity processes, ensuring secure and scalable infrastructure. Conducted internal audits, applied domain rules and access controls, reviewed logs, and automated security tasks, always focusing on efficiency, safety, and regulatory compliance.",
     avatar: Avatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "IT & Cybersecurity Lead",
+    position: "Comprehensive Experience",
+    text: "Autodidact, analytical, and proactive — I lead IT initiatives, secure critical systems, and implement best practices across networks, applications, and infrastructure.",
     avatar: Avatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "IT & Cybersecurity Specialist @ Amphora",
+    position: "Currently",
+    text: "Administered and configured MDM, EMM, and UEM, implementing security policies and ensuring NIS2 compliance. Designed backup plans, cybersecurity training strategies, managed Google Workspace and corporate networks, and reviewed code to secure logins and prevent vulnerabilities.",
     avatar: Avatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "IT Manager @ MiiN Cosmetics",
+    position: "Feb 2024 - Present, Barcelona, ES",
+    text: "Leading the IT department, developing internal applications, and performing penetration testing and vulnerability assessments to ensure system security. Driving cybersecurity projects and continuously improving infrastructure and IT processes.",
     avatar: Avatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Systems Technician @ Tcatnet",
+    position: "Jan 2020 - Sep 2021, Barcelona, ES",
+    text: "Resolved hardware and software issues, configured networks, NAS, routers, switches, servers, and mobile devices. Maintained optimized and secure infrastructure, ensuring high availability and user support.",
+    avatar: Avatar5,
+  },
+  {
+    name: "Systems Technician @ Amplifon",
+    position: "Dec 2021 - Jan 2024, Sant Cugat del Vallès, ES",
+    text: "Managed Active Directory users, provided remote support, and prepared technical documentation. Configured routers, switches, firewalls, network printers, and devices, ensuring robust and secure IT infrastructure.",
     avatar: Avatar5,
   },
 ];
 
 export const toolBoxItems = [
-  { title: "Javascript", iconType: JavascriptIcon },
-  { title: "HTML5", iconType: HtmlIcon },
-  { title: "CSS3", iconType: CssIcon },
-  { title: "React", iconType: ReactIcon },
-  { title: "Chorome", iconType: ChromeIcon },
-  { title: "Github", iconType: GithubIcon },
+  { title: "Java", iconType: JavascriptIcon},
+  { title: "Python", iconType: HtmlIcon },
+  { title: "SQL", iconType: CssIcon },
+  { title: "HTML/CSS", iconType: ReactIcon },
+  { title: "Kali Linux Tools", iconType: ChromeIcon },
+  { title: "Wireshark", iconType: GithubIcon },
+  { title: "Cisco Packet Tracer", iconType: GithubIcon },
+  { title: "Spanish Native", iconType: GithubIcon },
+  { title: "Catalan Native", iconType: GithubIcon },
+  { title: "English Advanced", iconType: GithubIcon },
+
 ];
 
 export const hobbies = [
-  { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
-  { title: "Photography", emoji: "📷", left: "50%", top: "5%" },
-  { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
-  { title: "Gaming", emoji: "🎮", left: "10%", top: "35%" },
-  { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
-  { title: "Fitness", emoji: "🏋️‍♀️", left: "5%", top: "65%" },
-  { title: "Reading", emoji: "📚", left: "45%", top: "70%" },
+  { title: "Cybersecurity", emoji: "🛡️", left: "5%", top: "5%" },
+  { title: "IT Management", emoji: "💼", left: "50%", top: "5%" },
+  { title: "Networking", emoji: "🌐", left: "35%", top: "40%" },
+  { title: "Cloud & Servers", emoji: "☁️", left: "10%", top: "35%" },
+  { title: "Automation", emoji: "🤖", left: "70%", top: "45%" },
+  { title: "Compliance", emoji: "📜", left: "5%", top: "65%" },
+  { title: "Dev & Scripting", emoji: "💻", left: "45%", top: "70%" },
 ];
