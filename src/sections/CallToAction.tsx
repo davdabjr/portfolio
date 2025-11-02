@@ -24,7 +24,7 @@ export const CallToAction = () => {
             </div>
             <div>
               <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900">
-                <span className="font-semibold">Contect Me</span>
+                <span className="font-semibold">Connect Me</span>
                 <ArrowUpRightIcon className="size-4" />
               </Button>
             </div>
