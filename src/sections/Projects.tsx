@@ -10,7 +10,7 @@ export const Projects = () => {
     <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="My experience
+          eyebrow="My experience"
           title="Work Projects"
           description="The best achievements that I earn in every job"
         />
