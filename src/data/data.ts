@@ -13,6 +13,10 @@ import {
   ReactIcon,
   ChromeIcon,
   GithubIcon,
+  Amphora,
+  MiiN,
+  TCatNet,
+  Amplifon,
 } from "@/assets";
 
 export const portfolioProjects = [
@@ -26,7 +30,7 @@ export const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "#",
-    image: Showcase3,
+    image: Amphora,
   },
   {
     company: "MiiN Cosmetics",
@@ -38,7 +42,7 @@ export const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "#",
-    image: Showcase2,
+    image: MiiN,
   },
   {
     company: "TCatNet",
@@ -50,7 +54,7 @@ export const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "#",
-    image: Showcase1,
+    image: TCatNet,
   },
   {
     company: "Amplifon",
@@ -62,7 +66,7 @@ export const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "#",
-    image: Showcase1,
+    image: Amplifon,
   },
 ];
 
@@ -142,3 +146,4 @@ export const hobbies = [
   { title: "Compliance", emoji: "📜", left: "5%", top: "65%" },
   { title: "Dev & Scripting", emoji: "💻", left: "45%", top: "70%" },
 ];
+
