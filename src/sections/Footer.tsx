@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from "@/assets";
 import Link from "next/link";
 
+
 export const Footer = () => {
   return (
     <footer className="relative overflow-x-clip">
