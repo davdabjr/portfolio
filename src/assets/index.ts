@@ -22,3 +22,7 @@ export { default as EmojiSmileImage } from "@/assets/images/memoji-smile.png";
 export { default as Showcase1 } from "@/assets/images/showcase-1.png";
 export { default as Showcase2 } from "@/assets/images/showcase-2.png";
 export { default as Showcase3 } from "@/assets/images/showcase-3.png";
+export { default as Amplifon } from "@/assets/images/amplifon.png";
+export { default as TCatNet } from "@/assets/images/tcatnet.png";
+export { default as MiiN } from "@/assets/images/miin.png";
+export { default as Amphora } from "@/assets/images/amphora.png";
