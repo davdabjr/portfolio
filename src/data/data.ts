@@ -25,11 +25,11 @@ export const portfolioProjects = [
     year: "Since June 2025",
     title: "IT & Cibersecurity Specialist",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Implemented advanced security policies and endpoint protection to reduce incidents" },
+      { title: "Monitored and optimized network infrastructure" },
+      { title: "Conducted vulnerability assessments and remediation to ensure compliance with security standards" },
     ],
-    link: "#",
+    link: "https://amphoralogistics.com/es/home/",
     image: Amphora,
   },
   {
@@ -37,11 +37,11 @@ export const portfolioProjects = [
     year: "February 2024 to June 2025",
     title: "IT Manager",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Managed IT infrastructure and cloud services, improving operational efficiency" },
+      { title: "Led digital transformation projects that enhanced productivity across departments" },
+      { title: "Implemented data backup and recovery solutions, minimizing downtime and data loss risks" },
     ],
-    link: "#",
+    link: "https://miin-cosmetics.com/?gad_source=1&gad_campaignid=12131485877&gbraid=0AAAAADkxU0RkIXh7WHjJzaMvBTf-9sOoF&gclid=Cj0KCQjwgpzIBhCOARIsABZm7vG0PLTNFeiL2Ksgcc6Bqu2N3buaUqDK5irWfgAnNOzmq-EvzO6Ptr8aAlkOEALw_wcB",
     image: MiiN,
   },
   {
@@ -49,11 +49,11 @@ export const portfolioProjects = [
     year: "December 2021 to February 2024",
     title: "IT Technician",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Provided technical support and maintained local networks for over 100 users" },
+      { title: "Automated maintenance tasks, reducing manual workload" },
+      { title: "Assisted in configuring firewalls, routers, and monitoring systems to ensure secure operations" },
     ],
-    link: "#",
+    link: "https://www.tcatnet.com/",
     image: TCatNet,
   },
   {
@@ -61,11 +61,11 @@ export const portfolioProjects = [
     year: "January 2020 to October 2021",
     title: "Help Desk Technician",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Delivered Tier 1 & 2 support" },
+      { title: "Resolved software and hardware issues efficiently" },
+      { title: "Created internal documentation and guides to improve team response consistency" },
     ],
-    link: "#",
+    link: "https://www.amplifon.com/international",
     image: Amplifon,
   },
 ];
