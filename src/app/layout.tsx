@@ -11,7 +11,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Portly",
+  title: "David's Portfolio",
   description: "A Modern React Portfolio",
 };
 
