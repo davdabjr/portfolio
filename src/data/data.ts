@@ -21,7 +21,7 @@ import {
 
 export const portfolioProjects = [
   {
-    company: "Amphora Technoligies",
+    company: "Amphora Technologies",
     year: "Since June 2025",
     title: "IT & Cibersecurity Specialist",
     results: [
