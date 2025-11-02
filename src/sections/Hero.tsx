@@ -126,9 +126,7 @@ export const Hero = () => {
             Building Exceptional User Experiences
           </h1>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            I specialize in transforming designs into functional,
-            high-performing performing web applications. Let&apos;s discuss your
-            next project.
+            I combine technical expertise with a focus on cybersecurity and system performance to deliver solutions that are both powerful and secure. Let’s make your next project stronger and safer.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
