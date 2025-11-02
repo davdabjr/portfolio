@@ -9,10 +9,9 @@ export const Testimonials = () => {
     <section className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What Clients Say about Me"
-          description="Don't just take my word for it. See what my clients have to say
-        about my work."
+          eyebrow="More Info About My Jobs"
+          title="What I did in My Jobs"
+          description="All the details about my achievements in every job"
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
