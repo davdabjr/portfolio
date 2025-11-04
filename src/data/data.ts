@@ -124,16 +124,16 @@ export const testimonials = [
 ];
 
 export const toolBoxItems = [
-  { title: "Java", iconType: JavascriptIcon},
-  { title: "Python", iconType: HtmlIcon },
-  { title: "SQL", iconType: CssIcon },
-  { title: "HTML/CSS", iconType: ReactIcon },
-  { title: "Kali Linux Tools", iconType: ChromeIcon },
-  { title: "Wireshark", iconType: GithubIcon },
-  { title: "Cisco Packet Tracer", iconType: GithubIcon },
-  { title: "Spanish Native", iconType: GithubIcon },
-  { title: "Catalan Native", iconType: GithubIcon },
-  { title: "English Advanced", iconType: GithubIcon },
+  { title: "Java"},
+  { title: "Python"},
+  { title: "SQL",
+  { title: "HTML/CSS"},
+  { title: "Kali Linux Tools"},
+  { title: "Wireshark"},
+  { title: "Cisco Packet Tracer"},
+  { title: "Spanish Native"},
+  { title: "Catalan Native"},
+  { title: "English Advanced"},
 
 ];
 
