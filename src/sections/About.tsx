@@ -10,7 +10,6 @@ import { MapImage, EmojiSmileImage } from "@/assets";
 import { useRef } from "react";
 
 export const About = () => {
-  // useRef<any> avoids serialization issues during build
   const constraintRef = useRef<any>(null);
 
   return (
@@ -23,28 +22,30 @@ export const About = () => {
         />
 
         <div className="mt-20 flex flex-col gap-8">
-          {/* My Skills */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
+          {/* ROW: My Skills (col-span-2) | Beyond the Code (col-span-2) + Map (col-span-1)
+              We use a single grid row with fixed height, and cards inside use h-full so they match */}
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3 h-[320px]">
+            {/* My Skills (spans 2 columns on lg) */}
+            <Card className="h-full md:col-span-3 lg:col-span-2 flex flex-col">
               <CardHeader
                 title="My Skills"
                 description="The technical foundation that drives my work — cybersecurity, IT management, cloud infrastructure, automation, and development."
               />
-              <ToolboxItems
-                items={toolBoxItems}
-                itemsWrapperClassName="animate-move-left"
-              />
-              <ToolboxItems
-                items={toolBoxItems}
-                className="mt-6"
-                itemsWrapperClassName="animate-move-right"
-              />
+              <div className="mt-4 flex-1 flex flex-col justify-between overflow-hidden">
+                <ToolboxItems
+                  items={toolBoxItems}
+                  itemsWrapperClassName="animate-move-left"
+                />
+                <ToolboxItems
+                  items={toolBoxItems}
+                  className="mt-6"
+                  itemsWrapperClassName="animate-move-right"
+                />
+              </div>
             </Card>
-          </div>
 
-          {/* Beyond the Code + Map */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
+            {/* Beyond the Code (spans 2 columns on md/lg) */}
+            <Card className="h-full p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
                 description="Exploring how cybersecurity, technology, and innovation work together to build smarter, safer, and more efficient digital solutions."
@@ -59,8 +60,7 @@ export const About = () => {
                       top: hobby.top,
                       left: hobby.left,
                     }}
-                    // remove drag to avoid serialization issues in static build
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     <span className="font-medium text-gray-950">
                       {hobby.title}
@@ -71,7 +71,9 @@ export const About = () => {
               </div>
             </Card>
 
-            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
+            {/* Map (keeps its visual and will match height because parent grid has fixed height
+                and this card uses h-full) */}
+            <Card className="h-full p-0 relative md:col-span-2 lg:col-span-1">
               <Image
                 src={MapImage}
                 alt="map"
