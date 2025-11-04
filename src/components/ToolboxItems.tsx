@@ -1,10 +1,8 @@
 import { FC } from "react";
-import { TechIcon } from "./TechIcon";
 import { twMerge } from "tailwind-merge";
 
 interface ToolBoxItemProps {
   title: string;
-  iconType: React.ElementType;
 }
 
 interface ToolboxItemsProps {
@@ -22,13 +20,13 @@ export const ToolboxItems: FC<ToolboxItemsProps> = ({
     <div
       className={twMerge(
         "flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]",
-        className,
+        className
       )}
     >
       <div
         className={twMerge(
           "flex flex-none py-0.5 gap-6 pr-6",
-          itemsWrapperClassName,
+          itemsWrapperClassName
         )}
       >
         {[...items, ...items].map((item, index) => (
@@ -36,7 +34,6 @@ export const ToolboxItems: FC<ToolboxItemsProps> = ({
             key={index}
             className="inline-flex items-center gap-4 px-3 py-2 outline outline-2 outline-white/10 rounded-lg"
           >
-            <TechIcon component={item.iconType} />
             <span className="font-semibold">{item.title}</span>
           </div>
         ))}
