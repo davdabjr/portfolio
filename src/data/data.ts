@@ -126,7 +126,7 @@ export const testimonials = [
 export const toolBoxItems = [
   { title: "Java"},
   { title: "Python"},
-  { title: "SQL",
+  { title: "SQL"},
   { title: "HTML/CSS"},
   { title: "Kali Linux Tools"},
   { title: "Wireshark"},
