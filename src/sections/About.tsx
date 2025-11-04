@@ -23,30 +23,33 @@ export const About = () => {
 
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            {/* My Skills (previously My Toolbox) */}
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
-              <CardHeader
-                title="My Skills"
-                description="The technical foundation that drives my work."
-              />
-              <ToolboxItems
-                items={toolBoxItems}
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
-              />
-              <ToolboxItems
-                items={toolBoxItems}
-                className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
-              />
+            {/* My Skills */}
+            <Card className="h-[320px] md:col-span-3 lg:col-span-2 flex flex-col justify-between overflow-hidden">
+              <div>
+                <CardHeader
+                  title="My Skills"
+                  description="The technical foundation that drives my work — cybersecurity, IT management, cloud infrastructure, automation, and development."
+                />
+              </div>
+              <div className="flex flex-col gap-4 mt-4">
+                <ToolboxItems
+                  items={toolBoxItems}
+                  itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                />
+                <ToolboxItems
+                  items={toolBoxItems}
+                  itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
+                />
+              </div>
             </Card>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            {/* Beyond the Code (updated text) */}
+            {/* Beyond the Code */}
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Strengths"
-                description=" "
+                title="Beyond the Code"
+                description="Exploring how cybersecurity, technology, and innovation work together to build smarter, safer, and more efficient digital solutions."
                 className="px-6 py-6"
               />
               <div ref={constraintRef} className="relative flex-1">
@@ -70,7 +73,7 @@ export const About = () => {
               </div>
             </Card>
 
-            {/* Map Card (unchanged) */}
+            {/* Map */}
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
                 src={MapImage}
@@ -93,3 +96,4 @@ export const About = () => {
     </section>
   );
 };
+
