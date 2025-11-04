@@ -134,10 +134,18 @@ export const Hero = () => {
             <span className="font-semibold">Explore My Work</span>
             <ArrowDownIcon className="size-4" />
           </Button>
-          <Button variant="secondary">
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </Button>
+
+          {/* LinkedIn button */}
+          <a
+            href="https://www.linkedin.com/in/david-caballero-sampedro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="secondary" className="hover:scale-105 transition-transform duration-200">
+              <span>👋</span>
+              <span className="font-semibold">Let&apos;s Connect</span>
+            </Button>
+          </a>
         </div>
       </div>
     </section>
