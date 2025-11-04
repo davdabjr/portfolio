@@ -22,9 +22,9 @@ export const About = () => {
         />
 
         <div className="mt-20 flex flex-col gap-8">
+          {/* ---- First Row: My Skills ---- */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            {/* My Skills */}
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2 flex flex-col justify-between overflow-hidden">
+            <Card className="h-[320px] md:col-span-5 lg:col-span-3 flex flex-col justify-between overflow-hidden">
               <div>
                 <CardHeader
                   title="My Skills"
@@ -44,6 +44,7 @@ export const About = () => {
             </Card>
           </div>
 
+          {/* ---- Second Row: Beyond + Map ---- */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             {/* Beyond the Code */}
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
@@ -96,4 +97,3 @@ export const About = () => {
     </section>
   );
 };
-
