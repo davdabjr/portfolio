@@ -19,14 +19,20 @@ export const CallToAction = () => {
               </h2>
               <p className="text-sm md:text-base mt-2">
                 Ready to bring your next project to life? Let&apos;s connect and
-                discuss now I can help you achieve your goals.
+                discuss how I can help you achieve your goals.
               </p>
             </div>
             <div>
-              <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900">
-                <span className="font-semibold">Connect Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </Button>
+              <a
+                href="https://www.linkedin.com/in/david-caballero-sampedro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900 hover:scale-105 transition-transform duration-200">
+                  <span className="font-semibold">Connect Me</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -34,3 +40,4 @@ export const CallToAction = () => {
     </section>
   );
 };
+
