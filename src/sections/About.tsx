@@ -28,7 +28,7 @@ export const About = () => {
               <div>
                 <CardHeader
                   title="My Skills"
-                  description="The technical foundation that drives my work — cybersecurity, IT management, cloud infrastructure, automation, and development."
+                  description="The technical foundation that drives my work"
                 />
               </div>
               <div className="flex flex-col gap-4 mt-4">
@@ -49,8 +49,8 @@ export const About = () => {
             {/* Beyond the Code */}
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Beyond the Code"
-                description="Exploring how cybersecurity, technology, and innovation work together to build smarter, safer, and more efficient digital solutions."
+                title="Strengths"
+                description=" "
                 className="px-6 py-6"
               />
               <div ref={constraintRef} className="relative flex-1">
