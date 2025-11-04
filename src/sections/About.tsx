@@ -10,7 +10,8 @@ import { MapImage, EmojiSmileImage } from "@/assets";
 import { useRef } from "react";
 
 export const About = () => {
-  const constraintRef = useRef<HTMLDivElement>(null);
+  // useRef<any> avoids serialization issues during build
+  const constraintRef = useRef<any>(null);
 
   return (
     <section id="about" className="py-20 lg:py-28">
@@ -22,8 +23,8 @@ export const About = () => {
         />
 
         <div className="mt-20 flex flex-col gap-8">
+          {/* My Skills */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            {/* My Skills (previously My Toolbox) */}
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Skills"
@@ -31,36 +32,35 @@ export const About = () => {
               />
               <ToolboxItems
                 items={toolBoxItems}
-                // removed arbitrary Tailwind bracket class to avoid purge/build issues
                 itemsWrapperClassName="animate-move-left"
               />
               <ToolboxItems
                 items={toolBoxItems}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2 animate-move-right"
+                itemsWrapperClassName="animate-move-right"
               />
             </Card>
           </div>
 
+          {/* Beyond the Code + Map */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            {/* Beyond the Code (updated text) */}
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
                 description="Exploring how cybersecurity, technology, and innovation work together to build smarter, safer, and more efficient digital solutions."
                 className="px-6 py-6"
               />
-              <div ref={constraintRef} className="relative flex-1">
+              <div ref={constraintRef} className="relative flex-1 overflow-hidden">
                 {hobbies.map((hobby, index) => (
                   <motion.div
                     key={index}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute cursor-grab"
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
                       top: hobby.top,
                       left: hobby.left,
                     }}
-                    drag
-                    dragConstraints={constraintRef}
+                    // remove drag to avoid serialization issues in static build
+                    whileHover={{ scale: 1.05 }}
                   >
                     <span className="font-medium text-gray-950">
                       {hobby.title}
@@ -71,20 +71,19 @@ export const About = () => {
               </div>
             </Card>
 
-            {/* Map Card (unchanged) */}
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
                 src={MapImage}
                 alt="map"
-                className="size-full object-cover object-left-top"
+                className="w-full h-full object-cover object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full after:content-[''] after:absolute after:w-full after:h-full after:rounded-full after:outline after:outline-2 after:-outline-offset-2 after:outline-gray-950/30">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full -z-20 animate-ping"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full -z-10"></div>
                 <Image
                   src={EmojiSmileImage}
                   alt="Smiling Emoji"
-                  className="size-20"
+                  className="w-20 h-20"
                 />
               </div>
             </Card>
